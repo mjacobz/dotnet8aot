@@ -5,7 +5,7 @@ typedef int (*AddFunc)(int, int);
 
 int main() {
     // Load the shared library
-    void* handle = dlopen("/usr/lib64/apci/NativeAdder.so", RTLD_LAZY);
+    void* handle = dlopen("/usr/lib64/testaot/NativeAdder.so", RTLD_LAZY);
     if (!handle) {
         std::cerr << "Cannot open library: " << dlerror() << '\n';
         return 1;
